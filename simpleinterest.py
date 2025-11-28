@@ -1,9 +1,9 @@
 import sys
-def calculate_simple_interrest(principal,rate,time):
-    """Calculate simple interest given principal,rate,time."""
+def calculate_Simple_interest(principal,rate,time):
+    """Calculate Simple interest given principal,rate,time."""
     return(principal*rate*time)/100
 
-if__name__=="__main__":
+if __name__  == "__main__":
     print("=== Simple Interest Calculator ===")
     try:
         if len(sys.argv) == 4:
@@ -16,13 +16,13 @@ if__name__=="__main__":
             r = float(input("Enter the rate of interest: "))
             t = float(input("Enter the time in years: "))
             
-         print("\n====Program Parameters====")
-         print("Principal Amount :",p)
-         print("Rate of interest :",r) 
-         print("Time in years :",t) 
+        print("\n====Program Parameters====")
+        print("Principal Amount :",p)
+        print("Rate of interest :",r) 
+        print("Time in years :",t) 
          
-         interest = calculate_simple_interest(p,r,t)
-         print(f"\nSimple interest={interest:.2f}")
+        interest = calculate_Simple_interest(p,r,t)
+        print(f"\nSimple interest={interest:.2f}")
          
     except ValueError:   
         print("Invalid input! Please enter numeric values.")  
